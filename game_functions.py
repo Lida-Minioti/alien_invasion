@@ -110,7 +110,7 @@ def update_bullets(aliens, bullets, ai_settings, screen, stats, sb, ship):
 def check_bullet_alien_collision(ai_settings, screen, stats, sb,  ship, aliens, bullets):
     """Respond to bullet-alien collision"""
     # Remove any bullet and alien that have collided
-    collisions = pygame.sprite.groupcollide(aliens, bullets, True, False)
+    collisions = pygame.sprite.groupcollide(aliens, bullets, True, True)
     if collisions:
         for aliens in collisions.values():
             stats.score += ai_settings.alien_points*len(aliens)
