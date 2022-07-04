@@ -1,0 +1,4 @@
+# copied the file created by virtualenv automatically and added files to ignore
+__pycache__/
+.idea/
+/Notes
